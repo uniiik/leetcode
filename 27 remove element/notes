@@ -1,0 +1,3 @@
+first we will create an iterator it. then we will initialize it with first element of array using (it=nums.begin)
+then we will create an for loop in which we will check the cond where the value in array equals to val.
+when this cond. arises we will erase the element and decrease it by 1 as it will itself points to next posn.
