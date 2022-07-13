@@ -1,0 +1,23 @@
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        
+        int size=nums.size();
+        int sum_of_array=0;
+        int total=0;
+        //or we can also directly use the formulae total=n*(n+1)/2
+        
+        for(int i=0;i<size;i++)
+        {
+            sum_of_array+=nums[i];
+        }
+        
+        for(int i=0;i<size+1;i++)
+        {
+             total=total+i;
+        }
+         
+        return total-sum_of_array;
+        
+    }
+};
