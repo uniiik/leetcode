@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
-       int t=digits.size()-1;
+       
        for(int i=digits.size()-1;i>=0;i--)
        {
             
