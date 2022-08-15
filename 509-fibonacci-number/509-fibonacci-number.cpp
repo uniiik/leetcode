@@ -7,3 +7,4 @@ public:
             return fib (n-1)+fib(n-2);
     }
 };
+//we are using recursive function here we are not storing the value we are just returning the output by just passing value in recursive function
