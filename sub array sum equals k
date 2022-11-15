@@ -1,0 +1,34 @@
+/*
+first make an map ,then use a for loop and a sum element having sum equals to  prevoius + current element and after that check whether sum equal to k . if yes, the count++.
+now check whether map contains the element sum - current element because it will be the single element which itself equals to k so, for this check in map and when find increase count as count+=map[sum-k].
+in last add the sum into map.
+
+*/
+
+
+
+class Solution {
+public:
+    int subarraySum(vector<int>& nums, int k) {
+    
+    int n=nums.size();
+    int count=0;
+    int sum=0;
+    unordered_map<int,int> map;
+    for(int i=0;i<n;i++)
+    {
+        sum+=nums[i];
+        if(sum==k)
+        count++;
+
+        if(map.find(sum-k)!=map.end())
+        {
+            count+=map[sum-k];
+        }
+
+        map[sum]++;
+    }
+    return count;
+        
+    }
+};
