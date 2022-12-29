@@ -16,3 +16,9 @@ public:
         
     }
 };
+
+
+/*
+if number is even then formula for bit is no of bits /2
+else if nuber is odd then add 1 to no of bits /2
+*/
