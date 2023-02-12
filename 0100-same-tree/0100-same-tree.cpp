@@ -34,3 +34,5 @@ public:
         
     }
 };
+
+// we will not use queue to implement this as null in the queue wont be acceped and it will give wrong answer
